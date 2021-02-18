@@ -1,0 +1,3377 @@
+{
+  "contractName": "ArtWork",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "ipfsHash",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name_",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.1+commit.f4a555be\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"ipfsHash\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name_\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"setOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/mymac/Study/Blockchain Dev - George Brown college/Winter 2021/Design Patterns - Blockchain/published-workspace/nft-lab/contracts/NFTArt.sol\":\"ArtWork\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/mymac/Study/Blockchain Dev - George Brown college/Winter 2021/Design Patterns - Blockchain/published-workspace/nft-lab/contracts/ERC721Token.sol\":{\"keccak256\":\"0x955480cf9297d21be9f4ee9f556ee48f904c5794638404574a7c47b38316605c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2ff628f8c38320ab300f8f90a2407f53b280325aecf22fb4e18ceac1ccd5dec2\",\"dweb:/ipfs/QmVzyS5FFtHQKGTfL12PbRBvtqAf5ER2oPZDynUBMijrgQ\"]},\"/Users/mymac/Study/Blockchain Dev - George Brown college/Winter 2021/Design Patterns - Blockchain/published-workspace/nft-lab/contracts/NFTArt.sol\":{\"keccak256\":\"0x76d52749a94d4ea4e21ed9c51f0c283f289995ecb1a70b3e3da828b10978b54f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e21b5df245f193c5f882367896e94563a5e8e7455749c5531953e0c6b44ce71\",\"dweb:/ipfs/QmT57LH6HKvWMfYUFCXDfKZzDEqckZcqX2hXur7cHgMmsQ\"]},\"@openzeppelin/contracts/access/Ownable.sol\":{\"keccak256\":\"0x15e2d5bd4c28a88548074c54d220e8086f638a71ed07e6b3ba5a70066fcf458d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://90faf5851c02f9bd42c5bfb54d4f0421a2612f50ab80b2c4fa24fa3792071cc2\",\"dweb:/ipfs/QmRGM4F2PcGVF85aTfaA9YBhCHHDqrMhRjyp6fGeBTtirb\"]},\"@openzeppelin/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0x24141d2f6b98d4cb77a8936eae8cbaad2e261d9062bdc08036096f4550092501\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b710eb003944777135f027500a5a57b479fe857849f5f467c1ef9687401e3c95\",\"dweb:/ipfs/QmcELzi6KRzAs3DXwxdsoKWRJ13KSeipKQsJgD3unctdZM\"]},\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xf70bc25d981e4ec9673a995ad2995d5d493ea188d3d8f388bba9c227ce09fb82\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd970f51e3a77790c2f02b5b1759827c3b897c3d98c407b3631e8af32e3dc93c\",\"dweb:/ipfs/QmPF85Amgbqjk3SNZKsPCsqCw8JfwYEPMnnhvMJUyX58je\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x7af5c445c8ec15943c526351329c58f15e2b4ab6e6c1c111efad299b94281c1e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a217a189a5191a3a98da08ea995141afe3b2e849a8949fe25a3c167002b525bd\",\"dweb:/ipfs/QmPvyrSUtWceXaiyJpfTMfWYtDmy58eyxQUuZSu7XLABuH\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x2d99a0deb6648c34fbc66d6ac4a2d64798d7a5321b45624f6736fadc63da1962\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2dcdce5ede1e5e650d174ec0b35be7d47b6a50f30bc895ef0d9e59fb75052e45\",\"dweb:/ipfs/QmQ2XFsDLTYqfEdw7pYzHiGtFRY11yQm4b6ynYgKqDxeB8\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\":{\"keccak256\":\"0xe6bd1b1218338b6f9fe17776f48623b4ac3d8a40405f74a44bc23c00abe2ca13\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c354c3f6e9c487759aa7869be4fba68e0b2efc777b514d289c4cbd3ff8f7e1a\",\"dweb:/ipfs/QmdF9LcSYVmiUCL7JxLEYmSLrjga6zJsujfi6sgEJD4M1z\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xccb917776f826ac6b68bd5a15a5f711e3967848a52ba11e6104d9a4f593314a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://430255ad2229ced6d880e61a67bdc6e48dbbaed8354a7c1fe918cd8b8714a886\",\"dweb:/ipfs/QmTHY56odzqEpEC6v6tafaWMYY7vmULw25q5XHJLCCAeox\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x52146049d6709c870e8ddcd988b5155cb6c5d640cfcd8978aee52bc1ba2ec4eb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ada84513617b7c1b2f890b44503735abaec73a1acd030112a17aac7e6c66a4a1\",\"dweb:/ipfs/QmaiFwdio67iJrfjAdkMac24eJ5sS1qD7CZW6PhUU6KjiK\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c\",\"dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"@openzeppelin/contracts/utils/EnumerableMap.sol\":{\"keccak256\":\"0x4b087f06b6670a131a5a14e53b1d2a5ef19c034cc5ec42eeebcf9554325744ad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f6a6af5d848334e40db419773f6360601e311ffc21c2e274f730b8c542da99fd\",\"dweb:/ipfs/QmfA24cxQ2g41ZWUuDF295dxDJ4xF1bSDYtC3EaLd7CzW8\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x1562cd9922fbf739edfb979f506809e2743789cbde3177515542161c3d04b164\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4580d57781513d98870d9738c7d39094336e0a70cdb90d68dad549c6ced466ec\",\"dweb:/ipfs/Qmf9YZzzRFuvMnav9dgmeRUpdYMMECiZX8w25sHWVbA18V\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0xa1e12f97981f1d0964b1c048978606a57127c56c438bab61cdfe269cad859a74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5eefac1760f524971e14aa3f3d79515a3d54fd28c1d3bdca0b36127da349b830\",\"dweb:/ipfs/QmUMzkyH3ytJX5gVPizQruNLhkKmuJb3nFqBDad4LPdg5U\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516103073803806103078339818101604052604081101561003357600080fd5b81019080805190602001909291908051604051939291908464010000000082111561005d57600080fd5b8382019150602082018581111561007357600080fd5b825186600182028301116401000000008211171561009057600080fd5b8083526020830192505050908051906020019080838360005b838110156100c45780820151818401526020810190506100a9565b50505050905090810190601f1680156100f15780820380516001836020036101000a031916815260200191505b5060405250505061010061017f565b60405180606001604052803373ffffffffffffffffffffffffffffffffffffffff16815260200183815260200184815250905080600001516000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050506101b6565b6040518060600160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160608152602001600081525090565b610142806101c56000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806313af403514610030575b600080fd5b6100726004803603602081101561004657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610074565b005b3373ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561010957806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b5056fea2646970667358221220b6edbf6f40368b10d6e86c8cdd5581aaeb10c10eb5f216f1a2e3361c12ea421b64736f6c63430007010033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806313af403514610030575b600080fd5b6100726004803603602081101561004657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610074565b005b3373ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561010957806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b5056fea2646970667358221220b6edbf6f40368b10d6e86c8cdd5581aaeb10c10eb5f216f1a2e3361c12ea421b64736f6c63430007010033",
+  "immutableReferences": {},
+  "sourceMap": "139:494:2:-:0;;;278:222;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;336:15;;:::i;:::-;354:105;;;;;;;;380:10;354:105;;;;;;411:5;354:105;;;;440:8;354:105;;;336:123;;482:4;:11;;;474:5;;:19;;;;;;;;;;;;;;;;;;278:222;;;139:494;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "139:494:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;507:124;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;572:10;563:19;;:5;;;;;;;;;;:19;;;560:65;;;606:8;598:5;;:16;;;;;;;;;;;;;;;;;;560:65;507:124;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.7.1;\n\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\nimport \"./ERC721Token.sol\";\n\ncontract ArtWork {\n    struct Art {\n        address artist;\n        string name;\n        uint hashIPFS;\n    }\n    address owner;\n\n    \n    constructor(uint ipfsHash, string memory name_) {\n        Art memory _art = Art({\n            artist: msg.sender, \n            name: name_,\n            hashIPFS: ipfsHash\n        });\n    \n        owner = _art.artist;\n    }\n \n    function setOwner(address newOwner) public {\n        if(owner == msg.sender) {\n            owner = newOwner;\n        }\n    }\n}\n\ncontract NFTArt is ERC721Token {\n    mapping (uint => ArtWork) private artworks;\n    address private artist;\n\n    constructor(address _proxyRegistryAddress)\n        ERC721Token(\"GBCArt Token\", \"GBC\", _proxyRegistryAddress){}\n\n    function baseTokenURI() public pure override returns (string memory) {\n        return \"https://opensea-creatures-api.herokuapp.com/api/creature/\";\n    }\n\n     function createArtwork(uint hashIPFS, string memory Name) public returns (ArtWork) {\n        ArtWork artContract = new ArtWork(hashIPFS, Name);\n        artworks[hashIPFS] = artContract;\n        return artContract;\n    }\n\n    function checkArtwork(uint hashIPFS) public view returns(bool) {\n        // ArtWork expectedOriginal = ArtWork(0x0, \"expectedOriginal\");\n        \n        if(artworks[hashIPFS] == ArtWork(address(0x00))) {\n            return true;\n        }\n        return false;\n    }\n}\n",
+  "sourcePath": "/Users/mymac/Study/Blockchain Dev - George Brown college/Winter 2021/Design Patterns - Blockchain/published-workspace/nft-lab/contracts/NFTArt.sol",
+  "ast": {
+    "absolutePath": "/Users/mymac/Study/Blockchain Dev - George Brown college/Winter 2021/Design Patterns - Blockchain/published-workspace/nft-lab/contracts/NFTArt.sol",
+    "exportedSymbols": {
+      "ArtWork": [
+        246
+      ],
+      "NFTArt": [
+        325
+      ]
+    },
+    "id": 326,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 196,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".1"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:2"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
+        "file": "@openzeppelin/contracts/access/Ownable.sol",
+        "id": 197,
+        "nodeType": "ImportDirective",
+        "scope": 326,
+        "sourceUnit": 436,
+        "src": "57:52:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/mymac/Study/Blockchain Dev - George Brown college/Winter 2021/Design Patterns - Blockchain/published-workspace/nft-lab/contracts/ERC721Token.sol",
+        "file": "./ERC721Token.sol",
+        "id": 198,
+        "nodeType": "ImportDirective",
+        "scope": 326,
+        "sourceUnit": 162,
+        "src": "110:27:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 246,
+        "linearizedBaseContracts": [
+          246
+        ],
+        "name": "ArtWork",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "ArtWork.Art",
+            "id": 205,
+            "members": [
+              {
+                "constant": false,
+                "id": 200,
+                "mutability": "mutable",
+                "name": "artist",
+                "nodeType": "VariableDeclaration",
+                "scope": 205,
+                "src": "183:14:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 199,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "183:7:2",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 202,
+                "mutability": "mutable",
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 205,
+                "src": "207:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 201,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "207:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 204,
+                "mutability": "mutable",
+                "name": "hashIPFS",
+                "nodeType": "VariableDeclaration",
+                "scope": 205,
+                "src": "228:13:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 203,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "228:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Art",
+            "nodeType": "StructDefinition",
+            "scope": 246,
+            "src": "162:86:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 207,
+            "mutability": "mutable",
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 246,
+            "src": "253:13:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 206,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "253:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 228,
+              "nodeType": "Block",
+              "src": "326:174:2",
+              "statements": [
+                {
+                  "assignments": [
+                    215
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 215,
+                      "mutability": "mutable",
+                      "name": "_art",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 228,
+                      "src": "336:15:2",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Art_$205_memory_ptr",
+                        "typeString": "struct ArtWork.Art"
+                      },
+                      "typeName": {
+                        "id": 214,
+                        "name": "Art",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 205,
+                        "src": "336:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Art_$205_storage_ptr",
+                          "typeString": "struct ArtWork.Art"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 222,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 217,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "380:3:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 218,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "380:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      {
+                        "id": 219,
+                        "name": "name_",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 211,
+                        "src": "411:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "id": 220,
+                        "name": "ipfsHash",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 209,
+                        "src": "440:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 216,
+                      "name": "Art",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 205,
+                      "src": "354:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_Art_$205_storage_ptr_$",
+                        "typeString": "type(struct ArtWork.Art storage pointer)"
+                      }
+                    },
+                    "id": 221,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [
+                      "artist",
+                      "name",
+                      "hashIPFS"
+                    ],
+                    "nodeType": "FunctionCall",
+                    "src": "354:105:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Art_$205_memory_ptr",
+                      "typeString": "struct ArtWork.Art memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "336:123:2"
+                },
+                {
+                  "expression": {
+                    "id": 226,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 223,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 207,
+                      "src": "474:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "id": 224,
+                        "name": "_art",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 215,
+                        "src": "482:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Art_$205_memory_ptr",
+                          "typeString": "struct ArtWork.Art memory"
+                        }
+                      },
+                      "id": 225,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "artist",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 200,
+                      "src": "482:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "474:19:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 227,
+                  "nodeType": "ExpressionStatement",
+                  "src": "474:19:2"
+                }
+              ]
+            },
+            "id": 229,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 212,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 209,
+                  "mutability": "mutable",
+                  "name": "ipfsHash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 229,
+                  "src": "290:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 208,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "290:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 211,
+                  "mutability": "mutable",
+                  "name": "name_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 229,
+                  "src": "305:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 210,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "305:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "289:36:2"
+            },
+            "returnParameters": {
+              "id": 213,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "326:0:2"
+            },
+            "scope": 246,
+            "src": "278:222:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 244,
+              "nodeType": "Block",
+              "src": "550:81:2",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    },
+                    "id": 237,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 234,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 207,
+                      "src": "563:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "expression": {
+                        "id": 235,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "572:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 236,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "572:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "563:19:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 243,
+                  "nodeType": "IfStatement",
+                  "src": "560:65:2",
+                  "trueBody": {
+                    "id": 242,
+                    "nodeType": "Block",
+                    "src": "584:41:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 240,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 238,
+                            "name": "owner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 207,
+                            "src": "598:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "id": 239,
+                            "name": "newOwner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 231,
+                            "src": "606:8:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "src": "598:16:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "id": 241,
+                        "nodeType": "ExpressionStatement",
+                        "src": "598:16:2"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "functionSelector": "13af4035",
+            "id": 245,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setOwner",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 232,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 231,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 245,
+                  "src": "525:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 230,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "525:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "524:18:2"
+            },
+            "returnParameters": {
+              "id": 233,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "550:0:2"
+            },
+            "scope": 246,
+            "src": "507:124:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 326,
+        "src": "139:494:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 247,
+              "name": "ERC721Token",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 161,
+              "src": "654:11:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721Token_$161",
+                "typeString": "contract ERC721Token"
+              }
+            },
+            "id": 248,
+            "nodeType": "InheritanceSpecifier",
+            "src": "654:11:2"
+          }
+        ],
+        "contractDependencies": [
+          161,
+          246,
+          435,
+          492,
+          504,
+          1802,
+          1918,
+          1949,
+          1976,
+          2313
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 325,
+        "linearizedBaseContracts": [
+          325,
+          161,
+          435,
+          1802,
+          1949,
+          1976,
+          1918,
+          492,
+          504,
+          2313
+        ],
+        "name": "NFTArt",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 252,
+            "mutability": "mutable",
+            "name": "artworks",
+            "nodeType": "VariableDeclaration",
+            "scope": 325,
+            "src": "672:42:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_contract$_ArtWork_$246_$",
+              "typeString": "mapping(uint256 => contract ArtWork)"
+            },
+            "typeName": {
+              "id": 251,
+              "keyType": {
+                "id": 249,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "681:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "672:25:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_contract$_ArtWork_$246_$",
+                "typeString": "mapping(uint256 => contract ArtWork)"
+              },
+              "valueType": {
+                "id": 250,
+                "name": "ArtWork",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 246,
+                "src": "689:7:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_ArtWork_$246",
+                  "typeString": "contract ArtWork"
+                }
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 254,
+            "mutability": "mutable",
+            "name": "artist",
+            "nodeType": "VariableDeclaration",
+            "scope": 325,
+            "src": "720:22:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 253,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "720:7:2",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 264,
+              "nodeType": "Block",
+              "src": "857:2:2",
+              "statements": []
+            },
+            "id": 265,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "hexValue": "47424341727420546f6b656e",
+                    "id": 259,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "812:14:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_10be70fa04ad01ec644e68ae517617d5bee482f6ba9595d69f212e18b275bc28",
+                      "typeString": "literal_string \"GBCArt Token\""
+                    },
+                    "value": "GBCArt Token"
+                  },
+                  {
+                    "hexValue": "474243",
+                    "id": 260,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "828:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_7393d63877aee1c6c1d43ae0b4b70ba619a19b505d7813a1f9886ff6f913d127",
+                      "typeString": "literal_string \"GBC\""
+                    },
+                    "value": "GBC"
+                  },
+                  {
+                    "id": 261,
+                    "name": "_proxyRegistryAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 256,
+                    "src": "835:21:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 262,
+                "modifierName": {
+                  "id": 258,
+                  "name": "ERC721Token",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 161,
+                  "src": "800:11:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_ERC721Token_$161_$",
+                    "typeString": "type(contract ERC721Token)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "800:57:2"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 257,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 256,
+                  "mutability": "mutable",
+                  "name": "_proxyRegistryAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 265,
+                  "src": "761:29:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 255,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "761:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "760:31:2"
+            },
+            "returnParameters": {
+              "id": 263,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "857:0:2"
+            },
+            "scope": 325,
+            "src": "749:110:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "baseFunctions": [
+              101
+            ],
+            "body": {
+              "id": 273,
+              "nodeType": "Block",
+              "src": "934:83:2",
+              "statements": [
+                {
+                  "expression": {
+                    "hexValue": "68747470733a2f2f6f70656e7365612d6372656174757265732d6170692e6865726f6b756170702e636f6d2f6170692f63726561747572652f",
+                    "id": 271,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "951:59:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_b106c575404f790e4882ef772ce7c4fc1e1ad6500c34c8f127eaf119506874b7",
+                      "typeString": "literal_string \"https://opensea-creatures-api.herokuapp.com/api/creature/\""
+                    },
+                    "value": "https://opensea-creatures-api.herokuapp.com/api/creature/"
+                  },
+                  "functionReturnParameters": 270,
+                  "id": 272,
+                  "nodeType": "Return",
+                  "src": "944:66:2"
+                }
+              ]
+            },
+            "functionSelector": "d547cfb7",
+            "id": 274,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "baseTokenURI",
+            "nodeType": "FunctionDefinition",
+            "overrides": {
+              "id": 267,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "901:8:2"
+            },
+            "parameters": {
+              "id": 266,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "886:2:2"
+            },
+            "returnParameters": {
+              "id": 270,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 269,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 274,
+                  "src": "919:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 268,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "919:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "918:15:2"
+            },
+            "scope": 325,
+            "src": "865:152:2",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 299,
+              "nodeType": "Block",
+              "src": "1107:136:2",
+              "statements": [
+                {
+                  "assignments": [
+                    284
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 284,
+                      "mutability": "mutable",
+                      "name": "artContract",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 299,
+                      "src": "1117:19:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ArtWork_$246",
+                        "typeString": "contract ArtWork"
+                      },
+                      "typeName": {
+                        "id": 283,
+                        "name": "ArtWork",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 246,
+                        "src": "1117:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ArtWork_$246",
+                          "typeString": "contract ArtWork"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 290,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 287,
+                        "name": "hashIPFS",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 276,
+                        "src": "1151:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 288,
+                        "name": "Name",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 278,
+                        "src": "1161:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 286,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "1139:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$_t_contract$_ArtWork_$246_$",
+                        "typeString": "function (uint256,string memory) returns (contract ArtWork)"
+                      },
+                      "typeName": {
+                        "id": 285,
+                        "name": "ArtWork",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 246,
+                        "src": "1143:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ArtWork_$246",
+                          "typeString": "contract ArtWork"
+                        }
+                      }
+                    },
+                    "id": 289,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1139:27:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ArtWork_$246",
+                      "typeString": "contract ArtWork"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1117:49:2"
+                },
+                {
+                  "expression": {
+                    "id": 295,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 291,
+                        "name": "artworks",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 252,
+                        "src": "1176:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_contract$_ArtWork_$246_$",
+                          "typeString": "mapping(uint256 => contract ArtWork)"
+                        }
+                      },
+                      "id": 293,
+                      "indexExpression": {
+                        "id": 292,
+                        "name": "hashIPFS",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 276,
+                        "src": "1185:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1176:18:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ArtWork_$246",
+                        "typeString": "contract ArtWork"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 294,
+                      "name": "artContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 284,
+                      "src": "1197:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ArtWork_$246",
+                        "typeString": "contract ArtWork"
+                      }
+                    },
+                    "src": "1176:32:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ArtWork_$246",
+                      "typeString": "contract ArtWork"
+                    }
+                  },
+                  "id": 296,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1176:32:2"
+                },
+                {
+                  "expression": {
+                    "id": 297,
+                    "name": "artContract",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 284,
+                    "src": "1225:11:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ArtWork_$246",
+                      "typeString": "contract ArtWork"
+                    }
+                  },
+                  "functionReturnParameters": 282,
+                  "id": 298,
+                  "nodeType": "Return",
+                  "src": "1218:18:2"
+                }
+              ]
+            },
+            "functionSelector": "9a8dea40",
+            "id": 300,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createArtwork",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 279,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 276,
+                  "mutability": "mutable",
+                  "name": "hashIPFS",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 300,
+                  "src": "1047:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 275,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1047:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 278,
+                  "mutability": "mutable",
+                  "name": "Name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 300,
+                  "src": "1062:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 277,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1062:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1046:35:2"
+            },
+            "returnParameters": {
+              "id": 282,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 281,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 300,
+                  "src": "1098:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ArtWork_$246",
+                    "typeString": "contract ArtWork"
+                  },
+                  "typeName": {
+                    "id": 280,
+                    "name": "ArtWork",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 246,
+                    "src": "1098:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ArtWork_$246",
+                      "typeString": "contract ArtWork"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1097:9:2"
+            },
+            "scope": 325,
+            "src": "1024:219:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 323,
+              "nodeType": "Block",
+              "src": "1312:204:2",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_contract$_ArtWork_$246",
+                      "typeString": "contract ArtWork"
+                    },
+                    "id": 316,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "baseExpression": {
+                        "id": 307,
+                        "name": "artworks",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 252,
+                        "src": "1406:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_contract$_ArtWork_$246_$",
+                          "typeString": "mapping(uint256 => contract ArtWork)"
+                        }
+                      },
+                      "id": 309,
+                      "indexExpression": {
+                        "id": 308,
+                        "name": "hashIPFS",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 302,
+                        "src": "1415:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "1406:18:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ArtWork_$246",
+                        "typeString": "contract ArtWork"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "==",
+                    "rightExpression": {
+                      "arguments": [
+                        {
+                          "arguments": [
+                            {
+                              "hexValue": "30783030",
+                              "id": 313,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "1444:4:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              },
+                              "value": "0x00"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                              }
+                            ],
+                            "id": 312,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "1436:7:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": {
+                              "id": 311,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1436:7:2",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 314,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1436:13:2",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        ],
+                        "id": 310,
+                        "name": "ArtWork",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 246,
+                        "src": "1428:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_ArtWork_$246_$",
+                          "typeString": "type(contract ArtWork)"
+                        }
+                      },
+                      "id": 315,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1428:22:2",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ArtWork_$246",
+                        "typeString": "contract ArtWork"
+                      }
+                    },
+                    "src": "1406:44:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 320,
+                  "nodeType": "IfStatement",
+                  "src": "1403:85:2",
+                  "trueBody": {
+                    "id": 319,
+                    "nodeType": "Block",
+                    "src": "1452:36:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "hexValue": "74727565",
+                          "id": 317,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "bool",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1473:4:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          "value": "true"
+                        },
+                        "functionReturnParameters": 306,
+                        "id": 318,
+                        "nodeType": "Return",
+                        "src": "1466:11:2"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "hexValue": "66616c7365",
+                    "id": 321,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1504:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "false"
+                  },
+                  "functionReturnParameters": 306,
+                  "id": 322,
+                  "nodeType": "Return",
+                  "src": "1497:12:2"
+                }
+              ]
+            },
+            "functionSelector": "227f7adc",
+            "id": 324,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkArtwork",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 303,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 302,
+                  "mutability": "mutable",
+                  "name": "hashIPFS",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 324,
+                  "src": "1271:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 301,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1271:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1270:15:2"
+            },
+            "returnParameters": {
+              "id": 306,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 305,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 324,
+                  "src": "1306:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 304,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1306:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1305:6:2"
+            },
+            "scope": 325,
+            "src": "1249:267:2",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 326,
+        "src": "635:883:2"
+      }
+    ],
+    "src": "32:1487:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/mymac/Study/Blockchain Dev - George Brown college/Winter 2021/Design Patterns - Blockchain/published-workspace/nft-lab/contracts/NFTArt.sol",
+      "exportedSymbols": {
+        "ArtWork": [
+          246
+        ],
+        "NFTArt": [
+          325
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".1"
+          ]
+        },
+        "id": 196,
+        "name": "PragmaDirective",
+        "src": "32:23:2"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 436,
+          "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
+          "file": "@openzeppelin/contracts/access/Ownable.sol",
+          "scope": 326,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 197,
+        "name": "ImportDirective",
+        "src": "57:52:2"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 162,
+          "absolutePath": "/Users/mymac/Study/Blockchain Dev - George Brown college/Winter 2021/Design Patterns - Blockchain/published-workspace/nft-lab/contracts/ERC721Token.sol",
+          "file": "./ERC721Token.sol",
+          "scope": 326,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 198,
+        "name": "ImportDirective",
+        "src": "110:27:2"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            246
+          ],
+          "name": "ArtWork",
+          "scope": 326
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "ArtWork.Art",
+              "name": "Art",
+              "scope": 246,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "artist",
+                  "scope": 205,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 199,
+                    "name": "ElementaryTypeName",
+                    "src": "183:7:2"
+                  }
+                ],
+                "id": 200,
+                "name": "VariableDeclaration",
+                "src": "183:14:2"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "scope": 205,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 201,
+                    "name": "ElementaryTypeName",
+                    "src": "207:6:2"
+                  }
+                ],
+                "id": 202,
+                "name": "VariableDeclaration",
+                "src": "207:11:2"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "hashIPFS",
+                  "scope": 205,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 203,
+                    "name": "ElementaryTypeName",
+                    "src": "228:4:2"
+                  }
+                ],
+                "id": 204,
+                "name": "VariableDeclaration",
+                "src": "228:13:2"
+              }
+            ],
+            "id": 205,
+            "name": "StructDefinition",
+            "src": "162:86:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "owner",
+              "scope": 246,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 206,
+                "name": "ElementaryTypeName",
+                "src": "253:7:2"
+              }
+            ],
+            "id": 207,
+            "name": "VariableDeclaration",
+            "src": "253:13:2"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 246,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "ipfsHash",
+                      "scope": 229,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 208,
+                        "name": "ElementaryTypeName",
+                        "src": "290:4:2"
+                      }
+                    ],
+                    "id": 209,
+                    "name": "VariableDeclaration",
+                    "src": "290:13:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "name_",
+                      "scope": 229,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 210,
+                        "name": "ElementaryTypeName",
+                        "src": "305:6:2"
+                      }
+                    ],
+                    "id": 211,
+                    "name": "VariableDeclaration",
+                    "src": "305:19:2"
+                  }
+                ],
+                "id": 212,
+                "name": "ParameterList",
+                "src": "289:36:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 213,
+                "name": "ParameterList",
+                "src": "326:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        215
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "mutability": "mutable",
+                          "name": "_art",
+                          "scope": 228,
+                          "stateVariable": false,
+                          "storageLocation": "memory",
+                          "type": "struct ArtWork.Art",
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "Art",
+                              "referencedDeclaration": 205,
+                              "type": "struct ArtWork.Art"
+                            },
+                            "id": 214,
+                            "name": "UserDefinedTypeName",
+                            "src": "336:3:2"
+                          }
+                        ],
+                        "id": 215,
+                        "name": "VariableDeclaration",
+                        "src": "336:15:2"
+                      },
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": true,
+                          "lValueRequested": false,
+                          "names": [
+                            "artist",
+                            "name",
+                            "hashIPFS"
+                          ],
+                          "tryCall": false,
+                          "type": "struct ArtWork.Art memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address_payable",
+                                  "typeString": "address payable"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 205,
+                              "type": "type(struct ArtWork.Art storage pointer)",
+                              "value": "Art"
+                            },
+                            "id": 216,
+                            "name": "Identifier",
+                            "src": "354:3:2"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": -15,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 217,
+                                "name": "Identifier",
+                                "src": "380:3:2"
+                              }
+                            ],
+                            "id": 218,
+                            "name": "MemberAccess",
+                            "src": "380:10:2"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 211,
+                              "type": "string memory",
+                              "value": "name_"
+                            },
+                            "id": 219,
+                            "name": "Identifier",
+                            "src": "411:5:2"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 209,
+                              "type": "uint256",
+                              "value": "ipfsHash"
+                            },
+                            "id": 220,
+                            "name": "Identifier",
+                            "src": "440:8:2"
+                          }
+                        ],
+                        "id": 221,
+                        "name": "FunctionCall",
+                        "src": "354:105:2"
+                      }
+                    ],
+                    "id": 222,
+                    "name": "VariableDeclarationStatement",
+                    "src": "336:123:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 207,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 223,
+                            "name": "Identifier",
+                            "src": "474:5:2"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "artist",
+                              "referencedDeclaration": 200,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 215,
+                                  "type": "struct ArtWork.Art memory",
+                                  "value": "_art"
+                                },
+                                "id": 224,
+                                "name": "Identifier",
+                                "src": "482:4:2"
+                              }
+                            ],
+                            "id": 225,
+                            "name": "MemberAccess",
+                            "src": "482:11:2"
+                          }
+                        ],
+                        "id": 226,
+                        "name": "Assignment",
+                        "src": "474:19:2"
+                      }
+                    ],
+                    "id": 227,
+                    "name": "ExpressionStatement",
+                    "src": "474:19:2"
+                  }
+                ],
+                "id": 228,
+                "name": "Block",
+                "src": "326:174:2"
+              }
+            ],
+            "id": 229,
+            "name": "FunctionDefinition",
+            "src": "278:222:2"
+          },
+          {
+            "attributes": {
+              "functionSelector": "13af4035",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setOwner",
+              "scope": 246,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "newOwner",
+                      "scope": 245,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 230,
+                        "name": "ElementaryTypeName",
+                        "src": "525:7:2"
+                      }
+                    ],
+                    "id": 231,
+                    "name": "VariableDeclaration",
+                    "src": "525:16:2"
+                  }
+                ],
+                "id": 232,
+                "name": "ParameterList",
+                "src": "524:18:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 233,
+                "name": "ParameterList",
+                "src": "550:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {},
+                    "children": [
+                      {
+                        "attributes": {
+                          "commonType": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 207,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 234,
+                            "name": "Identifier",
+                            "src": "563:5:2"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": -15,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 235,
+                                "name": "Identifier",
+                                "src": "572:3:2"
+                              }
+                            ],
+                            "id": 236,
+                            "name": "MemberAccess",
+                            "src": "572:10:2"
+                          }
+                        ],
+                        "id": 237,
+                        "name": "BinaryOperation",
+                        "src": "563:19:2"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "=",
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 207,
+                                      "type": "address",
+                                      "value": "owner"
+                                    },
+                                    "id": 238,
+                                    "name": "Identifier",
+                                    "src": "598:5:2"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 231,
+                                      "type": "address",
+                                      "value": "newOwner"
+                                    },
+                                    "id": 239,
+                                    "name": "Identifier",
+                                    "src": "606:8:2"
+                                  }
+                                ],
+                                "id": 240,
+                                "name": "Assignment",
+                                "src": "598:16:2"
+                              }
+                            ],
+                            "id": 241,
+                            "name": "ExpressionStatement",
+                            "src": "598:16:2"
+                          }
+                        ],
+                        "id": 242,
+                        "name": "Block",
+                        "src": "584:41:2"
+                      }
+                    ],
+                    "id": 243,
+                    "name": "IfStatement",
+                    "src": "560:65:2"
+                  }
+                ],
+                "id": 244,
+                "name": "Block",
+                "src": "550:81:2"
+              }
+            ],
+            "id": 245,
+            "name": "FunctionDefinition",
+            "src": "507:124:2"
+          }
+        ],
+        "id": 246,
+        "name": "ContractDefinition",
+        "src": "139:494:2"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            161,
+            246,
+            435,
+            492,
+            504,
+            1802,
+            1918,
+            1949,
+            1976,
+            2313
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            325,
+            161,
+            435,
+            1802,
+            1949,
+            1976,
+            1918,
+            492,
+            504,
+            2313
+          ],
+          "name": "NFTArt",
+          "scope": 326
+        },
+        "children": [
+          {
+            "attributes": {},
+            "children": [
+              {
+                "attributes": {
+                  "name": "ERC721Token",
+                  "referencedDeclaration": 161,
+                  "type": "contract ERC721Token"
+                },
+                "id": 247,
+                "name": "UserDefinedTypeName",
+                "src": "654:11:2"
+              }
+            ],
+            "id": 248,
+            "name": "InheritanceSpecifier",
+            "src": "654:11:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "artworks",
+              "scope": 325,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => contract ArtWork)",
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => contract ArtWork)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 249,
+                    "name": "ElementaryTypeName",
+                    "src": "681:4:2"
+                  },
+                  {
+                    "attributes": {
+                      "name": "ArtWork",
+                      "referencedDeclaration": 246,
+                      "type": "contract ArtWork"
+                    },
+                    "id": 250,
+                    "name": "UserDefinedTypeName",
+                    "src": "689:7:2"
+                  }
+                ],
+                "id": 251,
+                "name": "Mapping",
+                "src": "672:25:2"
+              }
+            ],
+            "id": 252,
+            "name": "VariableDeclaration",
+            "src": "672:42:2"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "artist",
+              "scope": 325,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 253,
+                "name": "ElementaryTypeName",
+                "src": "720:7:2"
+              }
+            ],
+            "id": 254,
+            "name": "VariableDeclaration",
+            "src": "720:22:2"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "name": "",
+              "scope": 325,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_proxyRegistryAddress",
+                      "scope": 265,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 255,
+                        "name": "ElementaryTypeName",
+                        "src": "761:7:2"
+                      }
+                    ],
+                    "id": 256,
+                    "name": "VariableDeclaration",
+                    "src": "761:29:2"
+                  }
+                ],
+                "id": 257,
+                "name": "ParameterList",
+                "src": "760:31:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 263,
+                "name": "ParameterList",
+                "src": "857:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 161,
+                      "type": "type(contract ERC721Token)",
+                      "value": "ERC721Token"
+                    },
+                    "id": 258,
+                    "name": "Identifier",
+                    "src": "800:11:2"
+                  },
+                  {
+                    "attributes": {
+                      "hexvalue": "47424341727420546f6b656e",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "token": "string",
+                      "type": "literal_string \"GBCArt Token\"",
+                      "value": "GBCArt Token"
+                    },
+                    "id": 259,
+                    "name": "Literal",
+                    "src": "812:14:2"
+                  },
+                  {
+                    "attributes": {
+                      "hexvalue": "474243",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "token": "string",
+                      "type": "literal_string \"GBC\"",
+                      "value": "GBC"
+                    },
+                    "id": 260,
+                    "name": "Literal",
+                    "src": "828:5:2"
+                  },
+                  {
+                    "attributes": {
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 256,
+                      "type": "address",
+                      "value": "_proxyRegistryAddress"
+                    },
+                    "id": 261,
+                    "name": "Identifier",
+                    "src": "835:21:2"
+                  }
+                ],
+                "id": 262,
+                "name": "ModifierInvocation",
+                "src": "800:57:2"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 264,
+                "name": "Block",
+                "src": "857:2:2"
+              }
+            ],
+            "id": 265,
+            "name": "FunctionDefinition",
+            "src": "749:110:2"
+          },
+          {
+            "attributes": {
+              "baseFunctions": [
+                101
+              ],
+              "functionSelector": "d547cfb7",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "baseTokenURI",
+              "scope": 325,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "overrides": [
+                    null
+                  ]
+                },
+                "id": 267,
+                "name": "OverrideSpecifier",
+                "src": "901:8:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 266,
+                "name": "ParameterList",
+                "src": "886:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 274,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 268,
+                        "name": "ElementaryTypeName",
+                        "src": "919:6:2"
+                      }
+                    ],
+                    "id": 269,
+                    "name": "VariableDeclaration",
+                    "src": "919:13:2"
+                  }
+                ],
+                "id": 270,
+                "name": "ParameterList",
+                "src": "918:15:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 270
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "hexvalue": "68747470733a2f2f6f70656e7365612d6372656174757265732d6170692e6865726f6b756170702e636f6d2f6170692f63726561747572652f",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "token": "string",
+                          "type": "literal_string \"https://opensea-creatures-api.herokuapp.com/api/creature/\"",
+                          "value": "https://opensea-creatures-api.herokuapp.com/api/creature/"
+                        },
+                        "id": 271,
+                        "name": "Literal",
+                        "src": "951:59:2"
+                      }
+                    ],
+                    "id": 272,
+                    "name": "Return",
+                    "src": "944:66:2"
+                  }
+                ],
+                "id": 273,
+                "name": "Block",
+                "src": "934:83:2"
+              }
+            ],
+            "id": 274,
+            "name": "FunctionDefinition",
+            "src": "865:152:2"
+          },
+          {
+            "attributes": {
+              "functionSelector": "9a8dea40",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "createArtwork",
+              "scope": 325,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "hashIPFS",
+                      "scope": 300,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 275,
+                        "name": "ElementaryTypeName",
+                        "src": "1047:4:2"
+                      }
+                    ],
+                    "id": 276,
+                    "name": "VariableDeclaration",
+                    "src": "1047:13:2"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "Name",
+                      "scope": 300,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 277,
+                        "name": "ElementaryTypeName",
+                        "src": "1062:6:2"
+                      }
+                    ],
+                    "id": 278,
+                    "name": "VariableDeclaration",
+                    "src": "1062:18:2"
+                  }
+                ],
+                "id": 279,
+                "name": "ParameterList",
+                "src": "1046:35:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 300,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract ArtWork",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "ArtWork",
+                          "referencedDeclaration": 246,
+                          "type": "contract ArtWork"
+                        },
+                        "id": 280,
+                        "name": "UserDefinedTypeName",
+                        "src": "1098:7:2"
+                      }
+                    ],
+                    "id": 281,
+                    "name": "VariableDeclaration",
+                    "src": "1098:7:2"
+                  }
+                ],
+                "id": 282,
+                "name": "ParameterList",
+                "src": "1097:9:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        284
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "mutability": "mutable",
+                          "name": "artContract",
+                          "scope": 299,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "contract ArtWork",
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "ArtWork",
+                              "referencedDeclaration": 246,
+                              "type": "contract ArtWork"
+                            },
+                            "id": 283,
+                            "name": "UserDefinedTypeName",
+                            "src": "1117:7:2"
+                          }
+                        ],
+                        "id": 284,
+                        "name": "VariableDeclaration",
+                        "src": "1117:19:2"
+                      },
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "contract ArtWork",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                },
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "function (uint256,string memory) returns (contract ArtWork)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "name": "ArtWork",
+                                  "referencedDeclaration": 246,
+                                  "type": "contract ArtWork"
+                                },
+                                "id": 285,
+                                "name": "UserDefinedTypeName",
+                                "src": "1143:7:2"
+                              }
+                            ],
+                            "id": 286,
+                            "name": "NewExpression",
+                            "src": "1139:11:2"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 276,
+                              "type": "uint256",
+                              "value": "hashIPFS"
+                            },
+                            "id": 287,
+                            "name": "Identifier",
+                            "src": "1151:8:2"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 278,
+                              "type": "string memory",
+                              "value": "Name"
+                            },
+                            "id": 288,
+                            "name": "Identifier",
+                            "src": "1161:4:2"
+                          }
+                        ],
+                        "id": 289,
+                        "name": "FunctionCall",
+                        "src": "1139:27:2"
+                      }
+                    ],
+                    "id": 290,
+                    "name": "VariableDeclarationStatement",
+                    "src": "1117:49:2"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract ArtWork"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "contract ArtWork"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 252,
+                                  "type": "mapping(uint256 => contract ArtWork)",
+                                  "value": "artworks"
+                                },
+                                "id": 291,
+                                "name": "Identifier",
+                                "src": "1176:8:2"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 276,
+                                  "type": "uint256",
+                                  "value": "hashIPFS"
+                                },
+                                "id": 292,
+                                "name": "Identifier",
+                                "src": "1185:8:2"
+                              }
+                            ],
+                            "id": 293,
+                            "name": "IndexAccess",
+                            "src": "1176:18:2"
+                          },
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 284,
+                              "type": "contract ArtWork",
+                              "value": "artContract"
+                            },
+                            "id": 294,
+                            "name": "Identifier",
+                            "src": "1197:11:2"
+                          }
+                        ],
+                        "id": 295,
+                        "name": "Assignment",
+                        "src": "1176:32:2"
+                      }
+                    ],
+                    "id": 296,
+                    "name": "ExpressionStatement",
+                    "src": "1176:32:2"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 282
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 284,
+                          "type": "contract ArtWork",
+                          "value": "artContract"
+                        },
+                        "id": 297,
+                        "name": "Identifier",
+                        "src": "1225:11:2"
+                      }
+                    ],
+                    "id": 298,
+                    "name": "Return",
+                    "src": "1218:18:2"
+                  }
+                ],
+                "id": 299,
+                "name": "Block",
+                "src": "1107:136:2"
+              }
+            ],
+            "id": 300,
+            "name": "FunctionDefinition",
+            "src": "1024:219:2"
+          },
+          {
+            "attributes": {
+              "functionSelector": "227f7adc",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "checkArtwork",
+              "scope": 325,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "hashIPFS",
+                      "scope": 324,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 301,
+                        "name": "ElementaryTypeName",
+                        "src": "1271:4:2"
+                      }
+                    ],
+                    "id": 302,
+                    "name": "VariableDeclaration",
+                    "src": "1271:13:2"
+                  }
+                ],
+                "id": 303,
+                "name": "ParameterList",
+                "src": "1270:15:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 324,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 304,
+                        "name": "ElementaryTypeName",
+                        "src": "1306:4:2"
+                      }
+                    ],
+                    "id": 305,
+                    "name": "VariableDeclaration",
+                    "src": "1306:4:2"
+                  }
+                ],
+                "id": 306,
+                "name": "ParameterList",
+                "src": "1305:6:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {},
+                    "children": [
+                      {
+                        "attributes": {
+                          "commonType": {
+                            "typeIdentifier": "t_contract$_ArtWork_$246",
+                            "typeString": "contract ArtWork"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "==",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "contract ArtWork"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 252,
+                                  "type": "mapping(uint256 => contract ArtWork)",
+                                  "value": "artworks"
+                                },
+                                "id": 307,
+                                "name": "Identifier",
+                                "src": "1406:8:2"
+                              },
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 302,
+                                  "type": "uint256",
+                                  "value": "hashIPFS"
+                                },
+                                "id": 308,
+                                "name": "Identifier",
+                                "src": "1415:8:2"
+                              }
+                            ],
+                            "id": 309,
+                            "name": "IndexAccess",
+                            "src": "1406:18:2"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "tryCall": false,
+                              "type": "contract ArtWork",
+                              "type_conversion": true
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_address_payable",
+                                      "typeString": "address payable"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 246,
+                                  "type": "type(contract ArtWork)",
+                                  "value": "ArtWork"
+                                },
+                                "id": 310,
+                                "name": "Identifier",
+                                "src": "1428:7:2"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "tryCall": false,
+                                  "type": "address payable",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_rational_0_by_1",
+                                          "typeString": "int_const 0"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "name": "address"
+                                        },
+                                        "id": 311,
+                                        "name": "ElementaryTypeName",
+                                        "src": "1436:7:2"
+                                      }
+                                    ],
+                                    "id": 312,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "1436:7:2"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "hexvalue": "30783030",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "token": "number",
+                                      "type": "int_const 0",
+                                      "value": "0x00"
+                                    },
+                                    "id": 313,
+                                    "name": "Literal",
+                                    "src": "1444:4:2"
+                                  }
+                                ],
+                                "id": 314,
+                                "name": "FunctionCall",
+                                "src": "1436:13:2"
+                              }
+                            ],
+                            "id": 315,
+                            "name": "FunctionCall",
+                            "src": "1428:22:2"
+                          }
+                        ],
+                        "id": 316,
+                        "name": "BinaryOperation",
+                        "src": "1406:44:2"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "functionReturnParameters": 306
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "hexvalue": "74727565",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "token": "bool",
+                                  "type": "bool",
+                                  "value": "true"
+                                },
+                                "id": 317,
+                                "name": "Literal",
+                                "src": "1473:4:2"
+                              }
+                            ],
+                            "id": 318,
+                            "name": "Return",
+                            "src": "1466:11:2"
+                          }
+                        ],
+                        "id": 319,
+                        "name": "Block",
+                        "src": "1452:36:2"
+                      }
+                    ],
+                    "id": 320,
+                    "name": "IfStatement",
+                    "src": "1403:85:2"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 306
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "hexvalue": "66616c7365",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "token": "bool",
+                          "type": "bool",
+                          "value": "false"
+                        },
+                        "id": 321,
+                        "name": "Literal",
+                        "src": "1504:5:2"
+                      }
+                    ],
+                    "id": 322,
+                    "name": "Return",
+                    "src": "1497:12:2"
+                  }
+                ],
+                "id": 323,
+                "name": "Block",
+                "src": "1312:204:2"
+              }
+            ],
+            "id": 324,
+            "name": "FunctionDefinition",
+            "src": "1249:267:2"
+          }
+        ],
+        "id": 325,
+        "name": "ContractDefinition",
+        "src": "635:883:2"
+      }
+    ],
+    "id": 326,
+    "name": "SourceUnit",
+    "src": "32:1487:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.1+commit.f4a555be.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-02-18T22:30:10.003Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
